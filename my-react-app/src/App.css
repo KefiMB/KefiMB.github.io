@@ -15,7 +15,7 @@ h2 {
   width: 50%;
 }
 span {
-  color:aqua;
+  color:black;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -35,4 +35,34 @@ h2 {
 /*left-content*/
 .home {
   display:flex;
+}
+.left-content,
+.right-content {
+  width: 50%;
+}
+.content {
+  padding: 30px;
+}
+.left-content {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  color: white;
+  overflow: hidden;
+}
+.home-img img {
+  position:absolute;
+  left: -40%;
+  top: 0%;
+  height: 110vh !important;
+  z-index: -1;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  color: black
+}
+.logo h1 {
+  
 }

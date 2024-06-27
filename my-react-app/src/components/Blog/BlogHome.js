@@ -6,12 +6,12 @@ const BlogHome = () => {
             id:1,
             titleOne: "You can change the world",
             titleTwo: "Strong Style",
-            paraOne: "How woemn are redirection Hollywood",
+            paraOne: "How women are redirection Hollywood",
             paraTwo: "New ways to wear denim",
-            name: "By Jasper Nugget",
-            subTitle: "How to shop midnfully",
+            name: "By Kefilwe Magasa",
+            subTitle: "Mindful Thinking",
             qrCode: "/images/qrcode.png",
-            cover: "images/blog%.jpg",
+            cover: "./images/blackwoman.jpg",
         },
     ]
     return (
@@ -22,14 +22,19 @@ const BlogHome = () => {
                     return (
                         <div className='content'>
                             <div className='logo'>
-                                <h1>S</h1>
+                                <h1>KM</h1>
                                 </div>
                                 <div className="home-img">
-                                    <img src={value.cover} alt=""/>
+                                    <img src="/images/blackwoman.jpg" alt=""/>
                                     </div>
                                     <div className='text'>
                                         <h1>{value.titleOne}</h1>
-                                        <p>{value.name}</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur 
+                                        voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto 
+                                        fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. 
+                                        Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, 
+                                        eveniet aliquid culpa officia aut!</p>
                                         <span>{value.name}</span>
                                         </div>
                                         <div className='text text2'>
