@@ -15,6 +15,30 @@ app.get("/", (req, res) => {
   res.send("KM");
 });
 
+const clientSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  city: { type: String, required: true }
+});
+
+app.post('/post', async (req, res) => {
+  try {
+    const { name, email, phone } = req.body;
+
+  
+    const client = new Post({ name, description });
+    await client.save();
+
+    res.status(201).json(post);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+const Client = mongoose.model('Post', postSchema);
+
+db.users.createIndex({ email: 1, city: 1 }, { unique: true });
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
