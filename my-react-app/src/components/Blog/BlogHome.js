@@ -27,7 +27,17 @@ const BlogHome = () => {
                                 <div className="home-img">
                                     <img src={value.cover} alt=""/>
                                     </div>
-                                    
+                                    <div className='text'>
+                                        <h1>{value.titleOne}</h1>
+                                        <p>{value.name}</p>
+                                        <span>{value.name}</span>
+                                        </div>
+                                        <div className='text text2'>
+                                        <h1>{value.titletwo}</h1>
+                                        <span>{value.subTitle}</span>
+                                        </div>
+
+                                        
                             </div>
                     )
                 }
